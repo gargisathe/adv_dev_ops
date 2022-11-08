@@ -1,0 +1,41 @@
+AIM- To create a Docker image 
+Go to terraform scrip in C Drive , create a folder docker in it  then open in command line
+Crate a .tf file with this name and context
+terraform {
+required_providers {
+docker = {
+source = "kreuzwerker/docker"
+version = "2.13.0"
+}
+}
+}
+provider "docker" {
+version = "~> 2.7"
+host = "npipe:////.//pipe//docker_engine"
+}
+#Pulls the image
+resource "docker_image" "ubuntu" {
+name = "ubuntu:latest"
+}
+ 
+
+To the same path, type the following commands- 
+~PS C:\Teraform Script\Docker> terraform init
+
+
+Now simply follow the below commands
+~PS C:\Teraform Script\Docker> terraform plan
+~PS C:\Teraform Script\Docker> terraform apply
+ 
+
+
+Check for docker image
+~PS C:\Teraform Script\Docker> docker images
+
+ 
+Destroy docker
+~PS C:\Teraform Script\Docker> terraform destroy 
+
+
+Check for docker image again-
+~PS C:\Teraform Script\Docker> docker images  

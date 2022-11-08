@@ -1,0 +1,14 @@
+Terraform is an IAC tool, used primarily by DevOps teams to automate various infrastructure tasks. The provisioning of cloud resources, for instance, is one of the main use cases of Terraform. Terraform allows you to describe your complete infrastructure in the form of code. The second main use for Terraform is to facilitate multi-cloud deployments.
+The terraform init command initializes a working directory containing Terraform configuration files. This is the first command that should be run after writing a new Terraform configuration or cloning an existing one from version control.
+The terraform plan command lets you to preview the actions Terraform would take to modify your infrastructure, or save a speculative plan which you can apply later. The function of terraform plan is speculative: you cannot apply it unless you save its contents and pass them to a terraform apply command.
+The terraform apply command performs a plan just like terraform plan does, but then actually carries out the planned changes to each resource using the relevant infrastructure provider's API.
+
+SonarQube is a Code Quality Assurance tool that collects and analyzes source code, and provides reports for the code quality of your project.
+Doesn’t just show you what’s wrong, but also offers quality and management tools to actively helps you correct issues
+Gives a moment-in-time snapshot of your code quality today, as well as trends of past and potentially future quality indicators.
+
+Kubernetes, or K8s for short, is an open-source container-orchestration tool designed by Google. It’s used for bundling and managing clusters of containerized applications — a process known as ‘orchestration’ in the computing world.
+In a nutshell, container orchestration tools, like Kubernetes, help developers manage complex applications and conserve resources. If one container fails, another needs to take its place. Kubernetes handles this changeover automatically and efficiently by restarting, replacing, and killing failed containers that don’t respond to a health check. It also monitors clusters and decides where to launch containers based on the resources currently being consumed — which means it’s useful for scaling, deployment, and general application management.
+
+Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system (OS) libraries and dependencies required to run that code in any environment. 
+Developers can create containers without Docker, but the platform makes it easier, simpler, and safer to build, deploy and manage containers. Docker is essentially a toolkit that enables developers to build, deploy, run, update, and stop containers using simple commands and work-saving automation through a single API.

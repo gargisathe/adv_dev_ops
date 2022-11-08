@@ -1,0 +1,48 @@
+Aim- To implement lamda Function.
+Login to Aws account-
+Search S3 ,click on the option below shown-
+ 
+~first S3 showed
+
+
+Create an S3 bucket by giving it a name
+~aws region pacific(Mumbai) ap-south-1
+		or
+~the default region
+
+Click on upload button after the s3 bucket is created in the object section 
+~Add any .py or .java extenstion file and click on upload 
+ 
+Now search Lambda 
+~Click create function
+
+ 
+
+Click on below options and click on configure
+~ s3-get-object-python (in blueprint)
+ 
+
+Select the bucket created and create trigger ,click on create function-
+~event type: all objects create events 
+
+Check the given trigger is created 
+ 
+
+Click on the orange test button-
+ 
+Now,
+~search cloudwatch
+
+
+Check the logs of the test-
+~click log groups 
+
+Now terminate-
+Click on delete function.
+~go to lambda > function> actions> delete function 
+
+
+Empty bucket
+~S3>bucket> empty bucket
+ 
+ 
